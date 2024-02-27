@@ -1,26 +1,40 @@
-
-nav {
-    background-color: orange; 
-    overflow: hidden; 
-}
-
-
 nav ul {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
     text-align: right;
 }
 
-nav ul li {
+nav > ul > li {
+    position: relative;
     display: inline-block;
 }
 
-nav ul li a {
-    display: block; 
-    color: white; 
-    text-align: center; 
-    padding: 14px 20px; 
-    text-decoration: none; 
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
 }
 
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: orange;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+}
