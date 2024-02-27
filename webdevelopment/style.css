@@ -1,3 +1,28 @@
 h1{
     color: #6a5acd;
 }
+
+.centered-div{
+    color: white;
+    width: 300px;
+    border: 15px solid white;
+    padding: 50px;
+    margin: 20px;
+    background-color: orange;
+    text-align: center;
+    line-height: 10px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: auto;
+
+}
+
+body{
+    background-color: #34c3eb;
+    color: rgb(123, 100, 26);
+    height: 100%;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
