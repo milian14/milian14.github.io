@@ -6,7 +6,7 @@ h1{
     color: white;
     width: 300px;
     border: 15px solid white;
-    padding: 50px;
+    padding: 20px;
     margin: 20px;
     background-color: orange;
     text-align: center;
@@ -18,6 +18,20 @@ h1{
 
 }
 
+.centered-text{
+    width: 1000px;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin: 10px;
+    background-color: orange;
+    text-align: center;
+    line-height: 25px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
 body{
     background-color: #34c3eb;
     color: rgb(123, 100, 26);
@@ -25,4 +39,10 @@ body{
     margin: 20px;
     justify-content: center;
     align-items: center;
+}
+
+
+.letter-spaces{
+    font-size: 22px;
+    line-height: 25px;
 }
