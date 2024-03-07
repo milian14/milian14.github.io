@@ -36,5 +36,10 @@ nav ul li ul li {
 }
 
 nav ul li ul li a {
-    padding: 10px;
+    padding-left: 25px;
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    border-top: solid grey 1px;
+    border-bottom: solid grey 1px;
 }
