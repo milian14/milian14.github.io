@@ -41,8 +41,57 @@ body{
     align-items: center;
 }
 
-
 .letter-spaces{
     font-size: 22px;
     line-height: 25px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-pg {
+    width: 70%;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    background-color: orange;
+    text-align: auto;
+    line-height: 25px;
+    display: inline-block; /* Changed display property */
+    vertical-align: top; /* Aligns elements at the top */
+}
+
+.headshot-style img {
+    max-width: 45%; /* Ensure the image is responsive and does not overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20%;
+}
+
+
+@media (min-width: 801px) {
+    .about-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; /* Align items at the start of the container */
+    }
+
+    .about-pg, .headshot-style {
+        width: auto; /* Reset any specific width to allow flexbox to control the size */
+        margin: 10px; /* Ensure some space between the elements */
+        flex: 1; /* Allow both elements to grow and take up equal space */
+    }
+}
+
+@media (max-width: 800px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-pg, .headshot-style {
+        width: 100%; /* Take the full width of the container */
+    }
 }
