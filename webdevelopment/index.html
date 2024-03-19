@@ -12,6 +12,7 @@ Tested: March 4, 2024
 
 -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HomePage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
@@ -22,6 +23,8 @@ Tested: March 4, 2024
     
     <header>
         <nav>
+            <input type="checkbox" id="menuToggle" class="menu-toggle" />
+            <label for="menuToggle" class="hamburger-icon">&#9776;</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -36,13 +39,15 @@ Tested: March 4, 2024
                 <li><a href="reflection.html">Philosophy</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+        
         </nav>
         
-        <h1>Home Page</h1>
+        <h1>Max Cytron</h1>
 
     </header>
     <main>
-        <nav></nav>
+        <div class="index-container">
+            <h1>Home Page</h1>
         <p>Welcome to my personal portfolio website! I'm excited to share my journey and showcase the
             projects, skills, and experiences that define my passion and dedication in the world of
             technology. Explore my work, get to know me better, and feel free to reach out for collaborations
@@ -59,7 +64,7 @@ Tested: March 4, 2024
             design, while my various other projects can show off my work within the cybersecurity,
             database, and app development field.
         </p>
-
+    </div>
     </main>
 
 
