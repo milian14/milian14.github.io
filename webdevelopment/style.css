@@ -60,28 +60,58 @@ body{
     background-color: orange;
     text-align: auto;
     line-height: 25px;
-    display: inline-block; /* Changed display property */
-    vertical-align: top; /* Aligns elements at the top */
+    display: inline-block; 
+    vertical-align: top;
 }
 
 .headshot-style img {
-    max-width: 45%; /* Ensure the image is responsive and does not overflow its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 45%; 
+    height: auto; 
     margin-left: 20%;
 }
 
+.index-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    padding: 20px;
+}
 
-@media (min-width: 801px) {
-    .about-container {
+.reflection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+
+.reflection-pg {
+    width: 70%;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    text-align: auto;
+    line-height: 25px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+
+
+
+
+
+@media (min-width: 800px) {
+    .about-container, .relfection-container {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start; /* Align items at the start of the container */
+        align-items: flex-start; 
     }
 
-    .about-pg, .headshot-style {
-        width: auto; /* Reset any specific width to allow flexbox to control the size */
-        margin: 10px; /* Ensure some space between the elements */
-        flex: 1; /* Allow both elements to grow and take up equal space */
+    .about-pg, .headshot-style, .reflection-pg {
+        width: auto; 
+        margin: 10px; 
+        flex: 1; 
     }
 }
 
@@ -90,8 +120,18 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    .index-container{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .about-pg, .headshot-style {
         width: 100%; /* Take the full width of the container */
     }
+    header, h1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
+
