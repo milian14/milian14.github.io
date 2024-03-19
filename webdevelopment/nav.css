@@ -4,6 +4,7 @@ nav ul {
     margin: 0;
     background-color: orange;
     text-align: right;
+    flex: 50%
 }
 
 nav > ul > li {
@@ -43,3 +44,45 @@ nav ul li ul li a {
     border-top: solid grey 1px;
     border-bottom: solid grey 1px;
 }
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    color: white;
+    font-size: 60px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul { 
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        display: block; 
+        text-align: center;
+    }
+
+    nav ul li ul li {
+        text-align: left; 
+        display: none;
+    }
+
+    .menu-toggle:checked + .hamburger-icon + ul {
+        display: block; 
+    }
+
+    
+}
+
