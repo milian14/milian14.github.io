@@ -96,19 +96,36 @@ body{
     vertical-align: top;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+
+.project-pg {
+    width: 70%;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    text-align: auto;
+    line-height: 25px;
+    display: inline-block; 
+    vertical-align: top;
+}
 
 
 
 
 
 @media (min-width: 800px) {
-    .about-container, .relfection-container {
+    .about-container, .relfection-container, .project-container {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start; 
     }
 
-    .about-pg, .headshot-style, .reflection-pg {
+    .about-pg, .headshot-style, .reflection-pg, .project-pg {
         width: auto; 
         margin: 10px; 
         flex: 1; 
@@ -134,4 +151,5 @@ body{
         text-align: center;
     }
 }
+
 
