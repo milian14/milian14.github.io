@@ -2,6 +2,34 @@ h1{
     color: #6a5acd;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff; 
+    padding: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .project-pg {
+        width: calc(50% - 20px); 
+    }
+    footer {
+        position: relative;
+        z-index: 0000;
+    }
+}
+
+
 .centered-div{
     color: white;
     width: 300px;
@@ -78,6 +106,20 @@ body{
     padding: 20px;
 }
 
+.project-pg {
+    width: 70%;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    background-color: orange;
+    text-align: auto;
+    line-height: 25px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+
+
 .reflection-container {
     display: flex;
     flex-direction: column;
@@ -100,20 +142,55 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: orange;
 }
 
 .project-pg {
-    width: 70%;
+    width: 90%; 
     padding: 15px;
-    padding-bottom: 5px;
-    margin-right: 10px;
-    text-align: auto;
-    line-height: 25px;
-    display: inline-block; 
-    vertical-align: top;
+    margin-bottom: 20px;
+    background-color: none;
 }
 
+.project-text-box,
+.project-content-box,
+.project-description-box {
+    width: 90%; 
+    max-width: 400px; 
+    margin-bottom: 10px;
+}
+
+.project-text-box {
+    height: 50px;
+    background-color: orange;
+    font-size: 40px;
+    text-align: center;
+}
+
+.project-content-box {
+    height: auto; 
+    font-size: 40px;
+}
+
+.project-content-box video {
+    width: 100%;
+    height: auto;
+}
+
+.project-description-box {
+    height: auto;
+    background-color: orange;
+    font-size: 15px;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .project-text-box,
+    .project-content-box,
+    .project-description-box {
+        width: 90%; 
+        max-width: none; 
+    }
+}
 
 
 
@@ -143,7 +220,7 @@ body{
     }
 
     .about-pg, .headshot-style {
-        width: 100%; /* Take the full width of the container */
+        width: 100%; 
     }
     header, h1 {
         align-items: center;
@@ -151,5 +228,3 @@ body{
         text-align: center;
     }
 }
-
-
