@@ -92,6 +92,10 @@ body{
     vertical-align: top;
 }
 
+.about-pg p {
+    font-family: 'Roboto', sans-serif;
+}
+
 .headshot-style img {
     max-width: 45%; 
     height: auto; 
@@ -226,5 +230,39 @@ body{
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+}
+
+
+@media print {
+    body {
+        color: black; 
+        font-family: "Times New Roman", serif; 
+        margin: 1in; 
+    }
+
+    h1 {
+        font-family: 'Roboto', serif; 
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 0.25mm;
+    }
+
+    p, ul, ol, blockquote, footer p {
+        font-family: "Times New Roman", serif; 
+    }
+
+    nav, .menu-toggle, .headshot-style, img, .centered-div {
+        display: none; 
+    }
+
+    footer a {
+        display: none; 
+    }
+
+    
+    p, ul, ol, blockquote, footer p {
+        font-size: 12pt; 
+        line-height: 1.2; 
     }
 }
