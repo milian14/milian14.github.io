@@ -10,14 +10,22 @@ h1{
 }
 
 
-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: #fff; 
-    padding: 20px;
+
+
+body, html {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px; /* Adjust based on footer height to ensure space for the footer */
 }
 
+footer {
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+    color: #fff;
+    padding: 20px;
+   
+}
 
 @media (max-width: 800px) {
     .project-pg {
@@ -129,12 +137,13 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: orange;
+    border-spacing: 20px;
 }
 
 .reflection-pg {
     width: 70%;
     padding: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     margin-right: 10px;
     text-align: auto;
     line-height: 25px;
