@@ -161,7 +161,6 @@ body{
     padding-bottom: 5px;
     margin-right: 10px;
     background-color: orange;
-    text-align: auto;
     line-height: 25px;
     display: inline-block; 
     vertical-align: top;
@@ -191,7 +190,6 @@ body{
     padding-bottom: 5px;
     margin-right: 10px;
     background-color: orange;
-    text-align: auto;
     line-height: 25px;
     display: inline-block; 
     vertical-align: top;
@@ -212,7 +210,6 @@ body{
     padding: 15px;
     padding-bottom: 0px;
     margin-right: 10px;
-    text-align: auto;
     line-height: 25px;
     display: inline-block; 
     vertical-align: top;
@@ -228,7 +225,6 @@ body{
     width: 90%; 
     padding: 15px;
     margin-bottom: 20px;
-    background-color: none;
 }
 
 .project-text-box,
