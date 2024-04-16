@@ -407,3 +407,48 @@ tbody tr:nth-child(even) {
         font-weight: bold;
     }
 }
+
+/* Styles for inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Media Query for tablets and smaller devices */
+@media (max-width: 768px) {
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+    .index-container, .form-container {
+        padding: 10px;
+    }
+}
+
