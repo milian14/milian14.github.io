@@ -352,7 +352,6 @@ th, td {
     text-align: center;
 }
 
-
 figcaption {
     margin-bottom: 10px;
     font-size: 20px;
@@ -360,53 +359,34 @@ figcaption {
     text-align: center;
 }
 
-
 thead tr {
     background-color: #007BFF;
     color: white;
 }
 
-
 tbody tr:nth-child(odd) {
-    background-color: #EEE; 
+    background-color: #EEE;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #FFF; 
+    background-color: #FFF;
 }
 
-
-@media (max-width: 600px) {
-    thead {
-        display: none; 
+@media (max-width: 800px) {
+    /* Reduce padding and font size for smaller screens */
+    th, td {
+        padding: 4px;
+        font-size: 14px;
     }
 
-    table, tbody, tr, td {
+    /* Optional: Introduce horizontal scrolling for tables */
+    table {
         display: block;
-        width: 100%;
-    }
-
-    tr {
-        margin-bottom: 10px;
-    }
-
-    td {
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-    }
-
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
+        overflow-x: auto;
         white-space: nowrap;
-        text-align: left;
-        font-weight: bold;
     }
 }
+
 
 /* Styles for inputs and textarea */
 input[type="text"],
