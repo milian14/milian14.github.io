@@ -18,7 +18,22 @@ Tested: April 2, 2024
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <script>
+        function updateClock() {
+            const now = new Date(); // Get current time
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            const timeString = hours + ':' + minutes + ':' + seconds;
     
+            document.getElementById('clock').textContent = timeString;
+        }
+    
+        setInterval(updateClock, 1000); // Update the clock every second
+    </script>
+
 </head>
 
 <body>
@@ -66,7 +81,9 @@ Tested: April 2, 2024
             design, while my various other projects can show off my work within the cybersecurity,
             database, and app development field.
         </p>
+        <div id="clock" class="clock-style"></div>
     </div>
+    
     </main>
 
 

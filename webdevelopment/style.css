@@ -432,3 +432,10 @@ button[type="submit"] {
     }
 }
 
+.clock-style {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #6a5acd;
+    text-align: center;
+    margin-top: 20px;
+}
