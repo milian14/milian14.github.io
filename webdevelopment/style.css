@@ -224,7 +224,7 @@ body{
 .project-pg {
     width: 90%; 
     padding-bottom: 55px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .project-text-box,
@@ -266,6 +266,13 @@ body{
         width: 90%; 
         max-width: none; 
     }
+}
+
+.project-container section:nth-child(2) .project-description-box{
+    font-size: 29px;
+}
+.project-container section:nth-child(3) .project-description-box {
+    font-size: 23px; /* increase as needed */
 }
 
 
